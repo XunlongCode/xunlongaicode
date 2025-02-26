@@ -32,7 +32,7 @@ suite("Xunlong AI Code Task", () => {
 		while (Date.now() - startTime < timeout) {
 			const messages = globalThis.provider.messages
 
-			if (messages.some(({ type, text }) => type === "say" && text?.includes("My name is Roo"))) {
+			if (messages.some(({ type, text }) => type === "say" && text?.includes("My name is XunlongAI"))) {
 				break
 			}
 
@@ -44,8 +44,10 @@ suite("Xunlong AI Code Task", () => {
 		}
 
 		assert.ok(
-			globalThis.provider.messages.some(({ type, text }) => type === "say" && text?.includes("My name is Roo")),
-			"Did not receive expected response containing 'My name is Roo'",
+			globalThis.provider.messages.some(
+				({ type, text }) => type === "say" && text?.includes("My name is XunlongAI"),
+			),
+			"Did not receive expected response containing 'My name is XunlongAI'",
 		)
 	})
 })

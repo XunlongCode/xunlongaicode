@@ -57,7 +57,7 @@
 - Fix default preferred language for zh-cn and zh-tw (thanks @System233!)
 - Fix Mistral integration (thanks @d-oit!)
 - Feature to mention `@terminal` to pull terminal output into context (thanks Cline!)
-- Fix system prompt to make sure Roo knows about all available modes
+- Fix system prompt to make sure XunlongAI knows about all available modes
 - Enable streaming mode for OpenAI o1
 
 ## [3.3.20]
@@ -161,11 +161,11 @@
 - Capture reasoning from more variants of DeepSeek R1 (thanks @Szpadel!)
 - Use an exponential backoff for API retries (if delay after first error is 5s, delay after second consecutive error will be 10s, then 20s, etc)
 - Add a slider in advanced settings to enable rate limiting requests to avoid overloading providers (i.e. wait at least 10 seconds between API requests)
-- Prompt tweaks to make Roo better at creating new custom modes for you
+- Prompt tweaks to make XunlongAI better at creating new custom modes for you
 
 ## [3.3.6]
 
-- Add a "new task" tool that allows Roo to start new tasks with an initial message and mode
+- Add a "new task" tool that allows XunlongAI to start new tasks with an initial message and mode
 - Fix a bug that was preventing the use of qwen-max and potentially other OpenAI-compatible providers (thanks @Szpadel!)
 - Add support for perplexity/sonar-reasoning (thanks @Szpadel!)
 - Visual fixes to dropdowns (thanks @psv2522!)
@@ -241,7 +241,7 @@
 
 ## [3.2.0 - 3.2.2]
 
-- **Name Change From Roo Code to Xunlong AI Code:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from Roo Code to Xunlong AI Code to better reflect our identity as we chart our own course.
+- **Name Change From XunlongAI Code to Xunlong AI Code:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from XunlongAI Code to Xunlong AI Code to better reflect our identity as we chart our own course.
 
 - **Custom Modes:** Create your own personas for Xunlong AI Code! While our built-in modes (Code, Architect, Ask) are still here, you can now shape entirely new ones:
     - Define custom prompts
@@ -423,7 +423,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.2.16]
 
-- Incorporate Premshay's [PR](https://github.com/RooVetGit/Roo-Cline/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
+- Incorporate Premshay's [PR](https://github.com/RooVetGit/XunlongAI-Cline/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
 
 ## [2.2.14 - 2.2.15]
 
@@ -495,7 +495,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.15]
 
-- Incorporate dbasclpy's [PR](https://github.com/RooVetGit/Roo-Cline/pull/54) to add support for gemini-exp-1206
+- Incorporate dbasclpy's [PR](https://github.com/RooVetGit/XunlongAI-Cline/pull/54) to add support for gemini-exp-1206
 - Make it clear that diff editing is very experimental
 
 ## [2.1.14]
@@ -505,7 +505,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.13]
 
-- Fix https://github.com/RooVetGit/Roo-Cline/issues/50 where sound effects were not respecting settings
+- Fix https://github.com/RooVetGit/XunlongAI-Cline/issues/50 where sound effects were not respecting settings
 
 ## [2.1.12]
 
@@ -513,7 +513,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.11]
 
-- Incorporate lloydchang's [PR](https://github.com/RooVetGit/Roo-Cline/pull/42) to add support for OpenRouter compression
+- Incorporate lloydchang's [PR](https://github.com/RooVetGit/XunlongAI-Cline/pull/42) to add support for OpenRouter compression
 
 ## [2.1.10]
 
@@ -525,7 +525,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.8]
 
-- Roo Code now allows configuration of which commands are allowed without approval!
+- XunlongAI Code now allows configuration of which commands are allowed without approval!
 
 ## [2.1.7]
 
@@ -539,7 +539,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.6]
 
-- Roo Code now runs in all VSCode-compatible editors
+- XunlongAI Code now runs in all VSCode-compatible editors
 
 ## [2.1.5]
 
@@ -547,11 +547,11 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.4]
 
-- Roo Code now can run side-by-side with Cline
+- XunlongAI Code now can run side-by-side with Cline
 
 ## [2.1.3]
 
-- Roo Code now allows browser actions without approval when `alwaysAllowBrowser` is true
+- XunlongAI Code now allows browser actions without approval when `alwaysAllowBrowser` is true
 
 ## [2.1.2]
 

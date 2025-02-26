@@ -37,7 +37,7 @@ export class OpenRouterHandler implements ApiHandler, SingleCompletionHandler {
 		const apiKey = this.options.openRouterApiKey ?? "not-provided"
 
 		const defaultHeaders = {
-			"HTTP-Referer": "https://github.com/RooVetGit/Roo-Cline",
+			"HTTP-Referer": "https://github.com/RooVetGit/XunlongAI-Cline",
 			"X-Title": "Xunlong AI Code",
 		}
 

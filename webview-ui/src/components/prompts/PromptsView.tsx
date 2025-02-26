@@ -496,7 +496,7 @@ const PromptsView = ({ onDone }: PromptsViewProps) => {
 							</PopoverContent>
 						</Popover>
 						<p className="text-xs mt-1.5 text-vscode-descriptionForeground">
-							Select the language that Roo should use for communication.
+							Select the language that XunlongAI should use for communication.
 						</p>
 					</div>
 
@@ -606,7 +606,7 @@ const PromptsView = ({ onDone }: PromptsViewProps) => {
 					</div>
 
 					<div className="text-sm text-vscode-descriptionForeground mb-3">
-						Hit the + to create a new custom mode, or just ask Roo in chat to create one for you!
+						Hit the + to create a new custom mode, or just ask XunlongAI in chat to create one for you!
 					</div>
 
 					<div className="flex gap-2 items-center mb-3 flex-wrap py-1">
@@ -688,8 +688,8 @@ const PromptsView = ({ onDone }: PromptsViewProps) => {
 							)}
 						</div>
 						<div className="text-sm text-vscode-descriptionForeground mb-2">
-							Define Roo's expertise and personality for this mode. This description shapes how Roo
-							presents itself and approaches tasks.
+							Define XunlongAI's expertise and personality for this mode. This description shapes how
+							XunlongAI presents itself and approaches tasks.
 						</div>
 						<VSCodeTextArea
 							value={(() => {
@@ -1255,7 +1255,7 @@ const PromptsView = ({ onDone }: PromptsViewProps) => {
 										color: "var(--vscode-descriptionForeground)",
 										marginBottom: "8px",
 									}}>
-									Define Roo's expertise and personality for this mode.
+									Define XunlongAI's expertise and personality for this mode.
 								</div>
 								<VSCodeTextArea
 									value={newModeRoleDefinition}

@@ -31,9 +31,9 @@ const Announcement = ({ version, hideAnnouncement }: AnnouncementProps) => {
 			<h2 style={{ margin: "0 0 8px" }}>🎉{"  "}Introducing Xunlong AI Code 3.2</h2>
 
 			<p style={{ margin: "5px 0px" }}>
-				Our biggest update yet is here - we're officially changing our name from Roo Code to Xunlong AI Code!
-				After growing beyond 50,000 installations, we're ready to chart our own course. Our heartfelt thanks to
-				everyone in the Cline community who helped us reach this milestone.
+				Our biggest update yet is here - we're officially changing our name from XunlongAI Code to Xunlong AI
+				Code! After growing beyond 50,000 installations, we're ready to chart our own course. Our heartfelt
+				thanks to everyone in the Cline community who helped us reach this milestone.
 			</p>
 
 			<h3 style={{ margin: "12px 0 8px" }}>Custom Modes: Celebrating Our New Identity</h3>

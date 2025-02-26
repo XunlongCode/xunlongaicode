@@ -62,7 +62,7 @@ describe("RequestyHandler", () => {
 				baseURL: "https://router.requesty.ai/v1",
 				apiKey: defaultOptions.requestyApiKey,
 				defaultHeaders: {
-					"HTTP-Referer": "https://github.com/RooVetGit/Roo-Cline",
+					"HTTP-Referer": "https://github.com/RooVetGit/XunlongAI-Cline",
 					"X-Title": "Xunlong AI Code",
 				},
 			})

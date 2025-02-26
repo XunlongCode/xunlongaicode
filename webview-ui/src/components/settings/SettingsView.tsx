@@ -351,9 +351,9 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 				<div style={{ marginBottom: 40 }}>
 					<h3 style={{ color: "var(--vscode-foreground)", margin: "0 0 15px 0" }}>Auto-Approve Settings</h3>
 					<p style={{ fontSize: "12px", marginBottom: 15, color: "var(--vscode-descriptionForeground)" }}>
-						The following settings allow Roo to automatically perform operations without requiring approval.
-						Enable these settings only if you fully trust the AI and understand the associated security
-						risks.
+						The following settings allow XunlongAI to automatically perform operations without requiring
+						approval. Enable these settings only if you fully trust the AI and understand the associated
+						security risks.
 					</p>
 
 					<div style={{ marginBottom: 15 }}>
@@ -368,7 +368,7 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 								marginTop: "5px",
 								color: "var(--vscode-descriptionForeground)",
 							}}>
-							When enabled, Roo will automatically view directory contents and read files without
+							When enabled, XunlongAI will automatically view directory contents and read files without
 							requiring you to click the Approve button.
 						</p>
 					</div>
@@ -643,7 +643,7 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 								marginTop: "5px",
 								color: "var(--vscode-descriptionForeground)",
 							}}>
-							When enabled, Roo will play sound effects for notifications and events.
+							When enabled, XunlongAI will play sound effects for notifications and events.
 						</p>
 					</div>
 					{soundEnabled && (
@@ -761,8 +761,8 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 								marginTop: "5px",
 								color: "var(--vscode-descriptionForeground)",
 							}}>
-							When enabled, Roo will be able to edit files more quickly and will automatically reject
-							truncated full-file writes. Works best with the latest Claude 3.7 Sonnet model.
+							When enabled, XunlongAI will be able to edit files more quickly and will automatically
+							reject truncated full-file writes. Works best with the latest Claude 3.7 Sonnet model.
 						</p>
 
 						{diffEnabled && (
@@ -833,8 +833,8 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 									marginTop: "5px",
 									color: "var(--vscode-descriptionForeground)",
 								}}>
-								When enabled, Roo will save a checkpoint whenever a file in the workspace is modified,
-								added or deleted, letting you easily revert to a previous state.
+								When enabled, XunlongAI will save a checkpoint whenever a file in the workspace is
+								modified, added or deleted, letting you easily revert to a previous state.
 							</p>
 						</div>
 

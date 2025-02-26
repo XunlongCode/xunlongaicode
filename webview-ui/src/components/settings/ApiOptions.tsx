@@ -777,8 +777,8 @@ const ApiOptions = ({
 											}}>
 											<i className="codicon codicon-info" style={{ fontSize: "12px" }}></i>
 											<span>
-												Total tokens (input + output) the model can process. This will help Roo
-												Code run correctly.
+												Total tokens (input + output) the model can process. This will help
+												XunlongAI Code run correctly.
 											</span>
 										</div>
 									</div>
@@ -1133,7 +1133,7 @@ const ApiOptions = ({
 								fontWeight: 500,
 							}}>
 							Note: This is a very experimental integration and may not work as expected. Please report
-							any issues to the Roo-Code GitHub repository.
+							any issues to the XunlongAI-Code GitHub repository.
 						</p>
 					</div>
 				</div>

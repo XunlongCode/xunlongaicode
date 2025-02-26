@@ -32,7 +32,7 @@ export class MistralHandler implements ApiHandler {
 		}
 
 		const baseUrl = this.getBaseUrl()
-		console.debug(`[Roo Code] MistralHandler using baseUrl: ${baseUrl}`)
+		console.debug(`[Xunlong AI Code] MistralHandler using baseUrl: ${baseUrl}`)
 		this.client = new Mistral({
 			serverURL: baseUrl,
 			apiKey: this.options.mistralApiKey,
@@ -41,7 +41,7 @@ export class MistralHandler implements ApiHandler {
 
 	private getBaseUrl(): string {
 		const modelId = this.options.apiModelId ?? mistralDefaultModelId
-		console.debug(`[Roo Code] MistralHandler using modelId: ${modelId}`)
+		console.debug(`[Xunlong AI Code] MistralHandler using modelId: ${modelId}`)
 		if (modelId?.startsWith("codestral-")) {
 			return this.options.mistralCodestralUrl || "https://codestral.mistral.ai"
 		}

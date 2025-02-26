@@ -50,7 +50,7 @@ export async function run(): Promise<void> {
 
 		globalThis.panel = vscode.window.createWebviewPanel(
 			"xunlongaicode.SidebarProvider",
-			"Roo Code",
+			"Xunlong AI Code",
 			vscode.ViewColumn.One,
 			{
 				enableScripts: true,

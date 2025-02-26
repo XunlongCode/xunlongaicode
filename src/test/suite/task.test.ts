@@ -1,6 +1,6 @@
 import * as assert from "assert"
 
-suite("Roo Code Task", () => {
+suite("Xunlong AI Code Task", () => {
 	test("Should handle prompt and response correctly", async function () {
 		const timeout = 30000
 		const interval = 1000

@@ -1,6 +1,6 @@
 {
 	"name": "xunlongaicode",
-	"displayName": "Roo Code (prev. Roo Cline)",
+	"displayName": "Xunlong AI Code",
 	"description": "A whole dev team of AI agents in your editor.",
 	"publisher": "RooVeterinaryInc",
 	"version": "3.7.4",
@@ -54,7 +54,7 @@
 			"activitybar": [
 				{
 					"id": "xunlongaicode-ActivityBar",
-					"title": "Roo Code",
+					"title": "Xunlong AI Code",
 					"icon": "$(rocket)"
 				}
 			]
@@ -107,51 +107,51 @@
 			{
 				"command": "xunlongaicode.openInNewTab",
 				"title": "Open In New Tab",
-				"category": "Roo Code"
+				"category": "Xunlong AI Code"
 			},
 			{
 				"command": "xunlongaicode.explainCode",
-				"title": "Roo Code: Explain Code",
-				"category": "Roo Code"
+				"title": "Xunlong AI Code: Explain Code",
+				"category": "Xunlong AI Code"
 			},
 			{
 				"command": "xunlongaicode.fixCode",
-				"title": "Roo Code: Fix Code",
-				"category": "Roo Code"
+				"title": "Xunlong AI Code: Fix Code",
+				"category": "Xunlong AI Code"
 			},
 			{
 				"command": "xunlongaicode.improveCode",
-				"title": "Roo Code: Improve Code",
-				"category": "Roo Code"
+				"title": "Xunlong AI Code: Improve Code",
+				"category": "Xunlong AI Code"
 			},
 			{
 				"command": "xunlongaicode.addToContext",
-				"title": "Roo Code: Add To Context",
-				"category": "Roo Code"
+				"title": "Xunlong AI Code: Add To Context",
+				"category": "Xunlong AI Code"
 			},
 			{
 				"command": "xunlongaicode.terminalAddToContext",
-				"title": "Roo Code: Add Terminal Content to Context",
+				"title": "Xunlong AI Code: Add Terminal Content to Context",
 				"category": "Terminal"
 			},
 			{
 				"command": "xunlongaicode.terminalFixCommand",
-				"title": "Roo Code: Fix This Command",
+				"title": "Xunlong AI Code: Fix This Command",
 				"category": "Terminal"
 			},
 			{
 				"command": "xunlongaicode.terminalExplainCommand",
-				"title": "Roo Code: Explain This Command",
+				"title": "Xunlong AI Code: Explain This Command",
 				"category": "Terminal"
 			},
 			{
 				"command": "xunlongaicode.terminalFixCommandInCurrentTask",
-				"title": "Roo Code: Fix This Command (Current Task)",
+				"title": "Xunlong AI Code: Fix This Command (Current Task)",
 				"category": "Terminal"
 			},
 			{
 				"command": "xunlongaicode.terminalExplainCommandInCurrentTask",
-				"title": "Roo Code: Explain This Command (Current Task)",
+				"title": "Xunlong AI Code: Explain This Command (Current Task)",
 				"category": "Terminal"
 			}
 		],
@@ -160,44 +160,44 @@
 				{
 					"command": "xunlongaicode.explainCode",
 					"when": "editorHasSelection",
-					"group": "Roo Code@1"
+					"group": "Xunlong AI Code@1"
 				},
 				{
 					"command": "xunlongaicode.fixCode",
 					"when": "editorHasSelection",
-					"group": "Roo Code@2"
+					"group": "Xunlong AI Code@2"
 				},
 				{
 					"command": "xunlongaicode.improveCode",
 					"when": "editorHasSelection",
-					"group": "Roo Code@3"
+					"group": "Xunlong AI Code@3"
 				},
 				{
 					"command": "xunlongaicode.addToContext",
 					"when": "editorHasSelection",
-					"group": "Roo Code@4"
+					"group": "Xunlong AI Code@4"
 				}
 			],
 			"terminal/context": [
 				{
 					"command": "xunlongaicode.terminalAddToContext",
-					"group": "Roo Code@1"
+					"group": "Xunlong AI Code@1"
 				},
 				{
 					"command": "xunlongaicode.terminalFixCommand",
-					"group": "Roo Code@2"
+					"group": "Xunlong AI Code@2"
 				},
 				{
 					"command": "xunlongaicode.terminalExplainCommand",
-					"group": "Roo Code@3"
+					"group": "Xunlong AI Code@3"
 				},
 				{
 					"command": "xunlongaicode.terminalFixCommandInCurrentTask",
-					"group": "Roo Code@5"
+					"group": "Xunlong AI Code@5"
 				},
 				{
 					"command": "xunlongaicode.terminalExplainCommandInCurrentTask",
-					"group": "Roo Code@6"
+					"group": "Xunlong AI Code@6"
 				}
 			],
 			"view/title": [
@@ -239,7 +239,7 @@
 			]
 		},
 		"configuration": {
-			"title": "Roo Code",
+			"title": "Xunlong AI Code",
 			"properties": {
 				"xunlongaicode.allowedCommands": {
 					"type": "array",

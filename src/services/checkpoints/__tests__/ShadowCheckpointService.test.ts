@@ -24,7 +24,7 @@ describe("ShadowCheckpointService", () => {
 
 	const initRepo = async ({
 		workspaceDir,
-		userName = "Roo Code",
+		userName = "Xunlong AI Code",
 		userEmail = "support@roocode.com",
 		testFileName = "test.txt",
 		textFileContent = "Hello, world!",

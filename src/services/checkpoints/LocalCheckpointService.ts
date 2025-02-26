@@ -10,7 +10,7 @@ export interface LocalCheckpointServiceOptions extends CheckpointServiceOptions 
 
 /**
  * The CheckpointService provides a mechanism for storing a snapshot of the
- * current VSCode workspace each time a Roo Code tool is executed. It uses Git
+ * current VSCode workspace each time a Xunlong AI Code tool is executed. It uses Git
  * under the hood.
  *
  * HOW IT WORKS
@@ -47,7 +47,7 @@ export interface LocalCheckpointServiceOptions extends CheckpointServiceOptions 
  */
 
 export class LocalCheckpointService implements CheckpointService {
-	private static readonly USER_NAME = "Roo Code"
+	private static readonly USER_NAME = "Xunlong AI Code"
 	private static readonly USER_EMAIL = "support@roocode.com"
 	private static readonly CHECKPOINT_BRANCH = "roo-code-checkpoints"
 	private static readonly STASH_BRANCH = "roo-code-stash"

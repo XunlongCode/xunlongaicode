@@ -2,8 +2,8 @@
 	"name": "xunlongaicode",
 	"displayName": "Xunlong AI Code",
 	"description": "A whole dev team of AI agents in your editor.",
-	"publisher": "RooVeterinaryInc",
-	"version": "3.7.4",
+	"publisher": "XunlongCode",
+	"version": "0.0.1-dev.1",
 	"icon": "assets/icons/xunlong.png",
 	"galleryBanner": {
 		"color": "#617A91",
@@ -13,7 +13,7 @@
 		"vscode": "^1.84.0"
 	},
 	"author": {
-		"name": "XunlongAI Vet"
+		"name": "XunlongCode"
 	},
 	"repository": {
 		"type": "git",

@@ -869,8 +869,8 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone },
 					}}>
 					<p style={{ wordWrap: "break-word", margin: 0, padding: 0 }}>
 						If you have any questions or feedback, feel free to open an issue at{" "}
-						<VSCodeLink href="https://github.com/RooVetGit/Roo-Code" style={{ display: "inline" }}>
-							github.com/RooVetGit/Roo-Code
+						<VSCodeLink href="https://github.com/XunlongCode/xunlongcode" style={{ display: "inline" }}>
+							github.com/XunlongCode/xunlongcode
 						</VSCodeLink>{" "}
 						or join{" "}
 						<VSCodeLink href="https://www.reddit.com/r/RooCode/" style={{ display: "inline" }}>

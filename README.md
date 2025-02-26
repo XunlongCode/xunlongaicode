@@ -13,7 +13,7 @@
 <h1>Xunlong AI Code (prev. Roo Code)</h1>
 
 <a href="https://marketplace.visualstudio.com/items?itemName=XunlongCode.xunlongaicode" target="_blank"><img src="https://img.shields.io/badge/Download%20on%20VS%20Marketplace-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Download on VS Marketplace"></a>
-<a href="https://github.com/RooVetGit/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop" target="_blank"><img src="https://img.shields.io/badge/Feature%20Requests-yellow?style=for-the-badge" alt="Feature Requests"></a>
+<a href="https://github.com/XunlongCode/xunlongcode/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop" target="_blank"><img src="https://img.shields.io/badge/Feature%20Requests-yellow?style=for-the-badge" alt="Feature Requests"></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=XunlongCode.xunlongaicode&ssr=false#review-details" target="_blank"><img src="https://img.shields.io/badge/Rate%20%26%20Review-green?style=for-the-badge" alt="Rate & Review"></a>
 <a href="https://docs.roocode.com" target="_blank"><img src="https://img.shields.io/badge/Documentation-6B46C1?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation"></a>
 
@@ -105,7 +105,7 @@ Make Xunlong AI Code work your way with:
 
 - **Discord:** [Join our Discord server](https://discord.gg/roocode) for real-time help and discussions
 - **Reddit:** [Visit our subreddit](https://www.reddit.com/r/RooCode) to share experiences and tips
-- **GitHub:** Report [issues](https://github.com/RooVetGit/Roo-Code/issues) or request [features](https://github.com/RooVetGit/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop)
+- **GitHub:** Report [issues](https://github.com/XunlongCode/xunlongcode/issues) or request [features](https://github.com/XunlongCode/xunlongcode/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop)
 
 ---
 
@@ -113,7 +113,7 @@ Make Xunlong AI Code work your way with:
 
 1. **Clone** the repo:
     ```bash
-    git clone https://github.com/RooVetGit/Roo-Code.git
+    git clone https://github.com/XunlongCode/xunlongcode.git
     ```
 2. **Install dependencies**:
     ```bash
@@ -151,7 +151,7 @@ We use [changesets](https://github.com/changesets/changesets) for versioning and
 
 We love community contributions! Here’s how to get involved:
 
-1. **Check Issues & Requests**: See [open issues](https://github.com/RooVetGit/Roo-Code/issues) or [feature requests](https://github.com/RooVetGit/Roo-Code/discussions/categories/feature-requests).
+1. **Check Issues & Requests**: See [open issues](https://github.com/XunlongCode/xunlongcode/issues) or [feature requests](https://github.com/XunlongCode/xunlongcode/discussions/categories/feature-requests).
 2. **Fork & branch** off `main`.
 3. **Submit a Pull Request** once your feature or fix is ready.
 4. **Join** our [Reddit community](https://www.reddit.com/r/RooCode/) and [Discord](https://roocode.com/discord) for feedback, tips, and announcements.

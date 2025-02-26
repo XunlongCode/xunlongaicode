@@ -13,7 +13,7 @@
     mkDevShell = system: let
       pkgs = import nixpkgs { inherit system; };
     in pkgs.mkShell {
-      name = "roo-code";
+      name = "xunlongaicode";
       
       packages = with pkgs; [
         zsh

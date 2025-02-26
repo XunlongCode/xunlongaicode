@@ -1947,7 +1947,7 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 		// Delete checkpoints branch.
 		if (checkpointsEnabled && baseDir) {
 			const branchSummary = await simpleGit(baseDir)
-				.branch(["-D", `roo-code-checkpoints-${id}`])
+				.branch(["-D", `xunlongaicode-checkpoints-${id}`])
 				.catch(() => undefined)
 
 			if (branchSummary) {

@@ -126,7 +126,7 @@ Make Xunlong AI Code work your way with:
     - A `.vsix` file will appear in the `bin/` directory.
 4. **Install** the `.vsix` manually if desired:
     ```bash
-    code --install-extension bin/roo-code-4.0.0.vsix
+    code --install-extension bin/xunlongaicode-4.0.0.vsix
     ```
 5. **Start the webview (Vite/React app with HMR)**:
     ```bash

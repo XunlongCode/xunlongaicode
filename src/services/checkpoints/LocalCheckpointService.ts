@@ -49,8 +49,8 @@ export interface LocalCheckpointServiceOptions extends CheckpointServiceOptions 
 export class LocalCheckpointService implements CheckpointService {
 	private static readonly USER_NAME = "Xunlong AI Code"
 	private static readonly USER_EMAIL = "support@roocode.com"
-	private static readonly CHECKPOINT_BRANCH = "roo-code-checkpoints"
-	private static readonly STASH_BRANCH = "roo-code-stash"
+	private static readonly CHECKPOINT_BRANCH = "xunlongaicode-checkpoints"
+	private static readonly STASH_BRANCH = "xunlongaicode-stash"
 
 	public readonly strategy: CheckpointStrategy = "local"
 	public readonly version = 1

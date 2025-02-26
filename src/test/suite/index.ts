@@ -49,7 +49,7 @@ export async function run(): Promise<void> {
 		)
 
 		globalThis.panel = vscode.window.createWebviewPanel(
-			"roo-cline.SidebarProvider",
+			"xunlongaicode.SidebarProvider",
 			"Roo Code",
 			vscode.ViewColumn.One,
 			{

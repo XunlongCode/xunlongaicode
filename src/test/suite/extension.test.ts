@@ -14,15 +14,15 @@ suite("Roo Code Extension", () => {
 		const startTime = Date.now()
 
 		const expectedCommands = [
-			"roo-cline.plusButtonClicked",
-			"roo-cline.mcpButtonClicked",
-			"roo-cline.historyButtonClicked",
-			"roo-cline.popoutButtonClicked",
-			"roo-cline.settingsButtonClicked",
-			"roo-cline.openInNewTab",
-			"roo-cline.explainCode",
-			"roo-cline.fixCode",
-			"roo-cline.improveCode",
+			"xunlongaicode.plusButtonClicked",
+			"xunlongaicode.mcpButtonClicked",
+			"xunlongaicode.historyButtonClicked",
+			"xunlongaicode.popoutButtonClicked",
+			"xunlongaicode.settingsButtonClicked",
+			"xunlongaicode.openInNewTab",
+			"xunlongaicode.explainCode",
+			"xunlongaicode.fixCode",
+			"xunlongaicode.improveCode",
 		]
 
 		while (Date.now() - startTime < timeout) {

@@ -1,5 +1,5 @@
 ---
-"roo-cline": patch
+"xunlongaicode": patch
 ---
 
 Pass "thinking" params to OpenRouter

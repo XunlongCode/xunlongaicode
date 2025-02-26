@@ -42,7 +42,8 @@
 		"ai",
 		"llama",
 		"roo code",
-		"roocode"
+		"roocode",
+		"xunlongaicode"
 	],
 	"activationEvents": [
 		"onLanguage",

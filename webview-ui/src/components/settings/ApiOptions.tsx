@@ -1316,13 +1316,13 @@ const ApiOptions = ({
 }
 
 export function getGlamaAuthUrl(uriScheme?: string) {
-	const callbackUrl = `${uriScheme || "vscode"}://rooveterinaryinc.roo-cline/glama`
+	const callbackUrl = `${uriScheme || "vscode"}://xunlongcode.xunlongaicode/glama`
 
 	return `https://glama.ai/oauth/authorize?callback_url=${encodeURIComponent(callbackUrl)}`
 }
 
 export function getOpenRouterAuthUrl(uriScheme?: string) {
-	return `https://openrouter.ai/auth?callback_url=${uriScheme || "vscode"}://rooveterinaryinc.roo-cline/openrouter`
+	return `https://openrouter.ai/auth?callback_url=${uriScheme || "vscode"}://xunlongcode.xunlongaicode/openrouter`
 }
 
 export function normalizeApiConfiguration(apiConfiguration?: ApiConfiguration) {

@@ -56,7 +56,7 @@
 				{
 					"id": "xunlongaicode-ActivityBar",
 					"title": "Xunlong AI Code",
-					"icon": "$(rocket)"
+					"icon": "assets/icons/xunlong.svg"
 				}
 			]
 		},

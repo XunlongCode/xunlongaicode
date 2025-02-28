@@ -3,7 +3,7 @@
 	"displayName": "Xunlong AI Code",
 	"description": "Xunlong ai code assistant.",
 	"publisher": "XunlongCode",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"icon": "assets/icons/xunlong.png",
 	"galleryBanner": {
 		"color": "#617A91",

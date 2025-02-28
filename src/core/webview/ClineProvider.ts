@@ -48,6 +48,7 @@ import { Cline } from "../Cline"
 import { openMention } from "../mentions"
 import { getNonce } from "./getNonce"
 import { getUri } from "./getUri"
+import { getMindieModels } from "../../api/providers/mindie"
 
 /**
  * https://github.com/microsoft/vscode-webview-ui-toolkit-samples/blob/main/default/weather-webview/src/providers/WeatherViewProvider.ts
@@ -867,6 +868,15 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 						// TODO: Cache like we do for OpenRouter, etc?
 						this.postMessageToWebview({ type: "ollamaModels", ollamaModels })
 						break
+					case "requestMindIEModels":
+						const mindIEModels = await getMindieModels(message.text)
+						console.log("requestMindIEModels", mindIEModels)
+
+						this.postMessageToWebview({
+							type: "mindIEModels",
+							mindIEModels,
+						})
+						break
 					case "requestLmStudioModels":
 						const lmStudioModels = await getLmStudioModels(message.text)
 						// TODO: Cache like we do for OpenRouter, etc?
@@ -1675,6 +1685,8 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 			requestyModelId,
 			requestyModelInfo,
 			modelTemperature,
+			mindIEBaseUrl,
+			mindIEModelId,
 		} = apiConfiguration
 		await Promise.all([
 			this.updateGlobalState("apiProvider", apiProvider),
@@ -1723,6 +1735,8 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 			this.updateGlobalState("requestyModelId", requestyModelId),
 			this.updateGlobalState("requestyModelInfo", requestyModelInfo),
 			this.updateGlobalState("modelTemperature", modelTemperature),
+			this.updateGlobalState("mindIEBaseUrl", mindIEBaseUrl),
+			this.updateGlobalState("mindIEModelId", mindIEModelId),
 		])
 		if (this.cline) {
 			this.cline.api = buildApiHandler(apiConfiguration)
@@ -2157,6 +2171,8 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 			openAiUseAzure,
 			ollamaModelId,
 			ollamaBaseUrl,
+			mindIEModelId,
+			mindIEBaseUrl,
 			lmStudioModelId,
 			lmStudioBaseUrl,
 			anthropicBaseUrl,
@@ -2240,6 +2256,8 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 			this.getGlobalState("openAiUseAzure") as Promise<boolean | undefined>,
 			this.getGlobalState("ollamaModelId") as Promise<string | undefined>,
 			this.getGlobalState("ollamaBaseUrl") as Promise<string | undefined>,
+			this.getGlobalState("mindIEModelId") as Promise<string | undefined>,
+			this.getGlobalState("mindIEBaseUrl") as Promise<string | undefined>,
 			this.getGlobalState("lmStudioModelId") as Promise<string | undefined>,
 			this.getGlobalState("lmStudioBaseUrl") as Promise<string | undefined>,
 			this.getGlobalState("anthropicBaseUrl") as Promise<string | undefined>,
@@ -2340,6 +2358,8 @@ export class ClineProvider implements vscode.WebviewViewProvider {
 				openAiUseAzure,
 				ollamaModelId,
 				ollamaBaseUrl,
+				mindIEBaseUrl,
+				mindIEModelId,
 				lmStudioModelId,
 				lmStudioBaseUrl,
 				anthropicBaseUrl,

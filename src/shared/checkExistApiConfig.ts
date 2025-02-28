@@ -10,6 +10,7 @@ export function checkExistKey(config: ApiConfiguration | undefined) {
 				config.vertexProjectId,
 				config.openAiApiKey,
 				config.ollamaModelId,
+				config.mindIEModelId,
 				config.lmStudioModelId,
 				config.geminiApiKey,
 				config.openAiNativeApiKey,

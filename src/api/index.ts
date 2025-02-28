@@ -16,6 +16,7 @@ import { VsCodeLmHandler } from "./providers/vscode-lm"
 import { ApiStream } from "./transform/stream"
 import { UnboundHandler } from "./providers/unbound"
 import { RequestyHandler } from "./providers/requesty"
+import { MindieHandler } from "./providers/mindie"
 
 export interface SingleCompletionHandler {
 	completePrompt(prompt: string): Promise<string>
@@ -59,6 +60,8 @@ export function buildApiHandler(configuration: ApiConfiguration): ApiHandler {
 			return new UnboundHandler(options)
 		case "requesty":
 			return new RequestyHandler(options)
+		case "mindie":
+			return new MindieHandler(options)
 		default:
 			return new AnthropicHandler(options)
 	}

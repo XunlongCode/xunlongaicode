@@ -46,6 +46,7 @@ export interface ExtensionMessage {
 		| "unboundModels"
 		| "refreshUnboundModels"
 		| "currentCheckpointUpdated"
+		| "mindIEModels"
 	text?: string
 	action?:
 		| "chatButtonClicked"
@@ -78,6 +79,7 @@ export interface ExtensionMessage {
 	mode?: Mode
 	customMode?: ModeConfig
 	slug?: string
+	mindIEModels?: string[]
 }
 
 export interface ApiConfigMeta {

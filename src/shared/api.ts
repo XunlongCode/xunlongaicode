@@ -16,10 +16,13 @@ export type ApiProvider =
 	| "mistral"
 	| "unbound"
 	| "requesty"
+	| "mindie"
 
 export interface ApiHandlerOptions {
 	apiModelId?: string
 	apiKey?: string // anthropic
+	mindIEBaseUrl?: string
+	mindIEModelId?: string
 	anthropicBaseUrl?: string
 	anthropicThinking?: number
 	vsCodeLmModelSelector?: vscode.LanguageModelChatSelector
@@ -785,4 +788,9 @@ export const unboundDefaultModelInfo: ModelInfo = {
 	outputPrice: 15.0,
 	cacheWritesPrice: 3.75,
 	cacheReadsPrice: 0.3,
+}
+
+export const mindIEModelInfoSaneDefaults: ModelInfo = {
+	supportsPromptCache: false,
+	contextWindow: 128_000,
 }

@@ -72,6 +72,11 @@ export function validateApiConfiguration(apiConfiguration?: ApiConfiguration): s
 					return "You must provide a valid model selector."
 				}
 				break
+			case "mindie":
+				if (!apiConfiguration.mindIEModelId) {
+					return "You must provide a valid model ID."
+				}
+				break
 		}
 	}
 	return undefined

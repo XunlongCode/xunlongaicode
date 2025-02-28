@@ -83,3 +83,5 @@ export type GlobalStateKey =
 	| "modelTemperature"
 	| "mistralCodestralUrl"
 	| "maxOpenTabsContext"
+	| "mindIEBaseUrl"
+	| "mindIEModelId"

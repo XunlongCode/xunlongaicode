@@ -33,6 +33,7 @@ import {
 	unboundDefaultModelInfo,
 	requestyDefaultModelId,
 	requestyDefaultModelInfo,
+	mindIEModelInfoSaneDefaults,
 	THINKING_BUDGET,
 } from "../../../../src/shared/api"
 import { ExtensionMessage } from "../../../../src/shared/ExtensionMessage"
@@ -66,6 +67,7 @@ const ApiOptions = ({
 	fromWelcomeView,
 }: ApiOptionsProps) => {
 	const [ollamaModels, setOllamaModels] = useState<string[]>([])
+	const [mindIEModels, setMindIEModels] = useState<string[]>([])
 	const [lmStudioModels, setLmStudioModels] = useState<string[]>([])
 	const [vsCodeLmModels, setVsCodeLmModels] = useState<vscodemodels.LanguageModelChatSelector[]>([])
 	const [anthropicBaseUrlSelected, setAnthropicBaseUrlSelected] = useState(!!apiConfiguration?.anthropicBaseUrl)
@@ -105,10 +107,17 @@ const ApiOptions = ({
 				vscode.postMessage({ type: "requestLmStudioModels", text: apiConfiguration?.lmStudioBaseUrl })
 			} else if (selectedProvider === "vscode-lm") {
 				vscode.postMessage({ type: "requestVsCodeLmModels" })
+			} else if (selectedProvider === "mindie") {
+				vscode.postMessage({ type: "requestMindIEModels", text: apiConfiguration?.mindIEBaseUrl })
 			}
 		},
 		250,
-		[selectedProvider, apiConfiguration?.ollamaBaseUrl, apiConfiguration?.lmStudioBaseUrl],
+		[
+			selectedProvider,
+			apiConfiguration?.ollamaBaseUrl,
+			apiConfiguration?.lmStudioBaseUrl,
+			apiConfiguration?.mindIEBaseUrl,
+		],
 	)
 
 	const handleMessage = useCallback((event: MessageEvent) => {
@@ -123,6 +132,8 @@ const ApiOptions = ({
 		} else if (message.type === "vsCodeLmModels" && Array.isArray(message.vsCodeLmModels)) {
 			const newModels = message.vsCodeLmModels
 			setVsCodeLmModels(newModels)
+		} else if (message.type === "mindIEModels" && message.mindIEModels) {
+			setMindIEModels(message.mindIEModels)
 		}
 	}, [])
 
@@ -177,6 +188,7 @@ const ApiOptions = ({
 						{ value: "ollama", label: "Ollama" },
 						{ value: "unbound", label: "Unbound" },
 						{ value: "requesty", label: "Requesty" },
+						{ value: "mindie", label: "MindIE" },
 					]}
 				/>
 			</div>
@@ -1195,6 +1207,61 @@ const ApiOptions = ({
 				</div>
 			)}
 
+			{selectedProvider === "mindie" && (
+				<div>
+					<VSCodeTextField
+						value={apiConfiguration?.mindIEBaseUrl || ""}
+						style={{ width: "100%" }}
+						type="url"
+						onInput={handleInputChange("mindIEBaseUrl")}
+						placeholder={"Default: http://localhost:1025"}>
+						<span style={{ fontWeight: 500 }}>Base URL (optional)</span>
+					</VSCodeTextField>
+					<VSCodeTextField
+						value={apiConfiguration?.mindIEModelId || ""}
+						style={{ width: "100%" }}
+						onInput={handleInputChange("mindIEModelId")}
+						placeholder={"Qwen2-1.5B-Instruct"}>
+						<span style={{ fontWeight: 500 }}>Model ID</span>
+					</VSCodeTextField>
+					{mindIEModels.length > 0 && (
+						<VSCodeRadioGroup
+							value={
+								mindIEModels.includes(apiConfiguration?.mindIEModelId || "")
+									? apiConfiguration?.mindIEModelId
+									: ""
+							}
+							onChange={handleInputChange("mindIEModelId")}>
+							{mindIEModels.map((model) => (
+								<VSCodeRadio
+									key={model}
+									value={model}
+									checked={apiConfiguration?.mindIEModelId === model}>
+									{model}
+								</VSCodeRadio>
+							))}
+						</VSCodeRadioGroup>
+					)}
+					<p
+						style={{
+							fontSize: "12px",
+							marginTop: "5px",
+							color: "var(--vscode-descriptionForeground)",
+						}}>
+						see
+						<VSCodeLink
+							href="https://www.hiascend.com/zh"
+							style={{ display: "inline", fontSize: "inherit" }}>
+							quickstart guide.
+						</VSCodeLink>
+						<span style={{ color: "var(--vscode-errorForeground)" }}>
+							(<span style={{ fontWeight: 500 }}>Note:</span> Cline uses complex prompts and works best
+							with Claude models. Less capable models may not work as expected.)
+						</span>
+					</p>
+				</div>
+			)}
+
 			{selectedProvider === "unbound" && (
 				<div>
 					<VSCodeTextField
@@ -1246,6 +1313,7 @@ const ApiOptions = ({
 				selectedProvider !== "requesty" &&
 				selectedProvider !== "openai" &&
 				selectedProvider !== "ollama" &&
+				selectedProvider !== "mindie" &&
 				selectedProvider !== "lmstudio" &&
 				selectedProvider !== "unbound" && (
 					<>
@@ -1408,6 +1476,12 @@ export function normalizeApiConfiguration(apiConfiguration?: ApiConfiguration) {
 				selectedProvider: provider,
 				selectedModelId: apiConfiguration?.requestyModelId || requestyDefaultModelId,
 				selectedModelInfo: apiConfiguration?.requestyModelInfo || requestyDefaultModelInfo,
+			}
+		case "mindie":
+			return {
+				selectedProvider: provider,
+				selectedModelId: apiConfiguration?.mindIEModelId || "",
+				selectedModelInfo: mindIEModelInfoSaneDefaults,
 			}
 		default:
 			return getProviderData(anthropicModels, anthropicDefaultModelId)
